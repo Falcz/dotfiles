@@ -1,6 +1,6 @@
 export ZSH=$HOME/.oh-my-zsh
 
-ZSH_THEME=""
+ZSH_THEME="spaceship"
 
 plugins=(git
          zsh-autosuggestions
@@ -23,10 +23,4 @@ if [ -d $WORK_DOT ]; then
 fi
 
 # Initialize the goods
-eval "$(rbenv init -)"
 eval "$(fasd --init auto)"
-autoload -U promptinit; promptinit
-prompt pure
-
-#Banner
-figlet 'zsh' | lolcat
