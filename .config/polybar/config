@@ -35,22 +35,47 @@ shade7 = #64B5F6
 shade8 = #90CAF9
 ashade8 = #2C2C2C
 
-
 primary = #aa0D47A1
 secondary = #e60053
 alert = #bd2c40
 
 [bar/bottom_bar]
 
-inherit = bar/top_bar
+width = 100%
+
+radius-bottom = 1.0
+fixed-center = true
+
+line-size = 5
+
+background = #44111122
+foreground = ${colors.fg}
+
+border-color = ${colors.trans}
+
+padding-left = 0
+padding-right = 0
+
+module-margin-left = 0
+module-margin-right = 0
+
+font-0 = "Google Sans:style=Regular;1"
+font-1 = "Google Sans:style=Regular;1"
+font-2 = "Google Sans:style=Bold;1"
+font-3 = "Material Icons:style=Regular:size=14;2"
+font-4 = FontAwesome5Free:style=Solid:size=14;2
+font-5 = FontAwesome:style=Regular:size=14;2
+font-6 = FontAwesome5Free:style=Regular:size=14;2
+font-7 = FontAwesome5Brands:style=Regular:size=14;2
+font-8 = Ionicons:style=Regular
 
 height = 40
 
 bottom = true
 
-modules-left = files chrome firefox whatsapp appstore vscode terminal
+modules-left =
 modules-center = i3
-modules-right = wlan filesystem memory cpu temperature powermenu
+modules-right = wlan xbacklight pulseaudio battery date powermenu
 
 scroll-up = i3wm-wsnext
 scroll-down = i3wm-wsprev
