@@ -161,7 +161,7 @@ bindsym XF86AudioPrev exec playerctl previous
 for_window [class="^.*"] border pixel 0
 
 # Set BG
-exec_always feh --bg-fill ~/Backgrounds/synth.jpg
+exec_always feh --bg-fill ~/backgrounds/synth.jpg
 
 # compton
 exec compton -f
@@ -169,22 +169,9 @@ exec compton -f
 # polybar
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 
-# App bindings
-bindsym $mod+Ctrl+c exec google-chrome-stable
-bindsym $mod+Ctrl+t exec thunar
-
-# network applet
-exec --no-startup-id nm-applet &
-
-# Snap Startup
-exec systemctl start snapd.service
-
 # Flash Focus 
 exec_always --no-startup-id flashfocus
 bindsym $mod+n exec --no-startup-id flash_window
-
-# Screenshot 
-bindsym $mod+Shift+s exec --no-startup-id xfce4-screenshooter -f
 
 # Set inner/outer gaps
 gaps inner 10
