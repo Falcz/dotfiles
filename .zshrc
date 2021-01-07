@@ -22,6 +22,8 @@ if [ -d $WORK_DOT ]; then
     done
 fi
 
+LS_COLORS="ow=01;36;40" && export LS_COLORS
+
 # Initialize the goods
 eval "$(rbenv init -)"
 eval "$(fasd --init auto)"
