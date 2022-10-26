@@ -1,0 +1,31 @@
+let mapleader = " "
+
+set ignorecase smartcase
+set NERDTree
+set hlsearch
+set showmode
+set scrolloff=5
+set history=1000
+set surround
+set incsearch
+set smartcase
+set easymotion
+set multiple-cursors
+set visualbell
+set clipboard=unnamedplus,unnamed
+
+imap jj <Esc>
+nnoremap <Leader>/ :nohlsearch<cr>
+nnoremap Y y$
+nnoremap <leader>q :q <CR>
+
+" Plugins
+map <Leader>f <Plug>(easymotion-s)
+nmap <Leader>nt :NERDTreeToggle<CR>
+nmap <Leader>df :action ToggleDistractionFreeMode<CR>
+
+" IDE Actions
+map <C-o> <Action>(Back)
+map <C-i> <Action>(Forward)
+map g; <Action>(JumpToLastChange)
+map g, <Action>(JumpToNextChange)
