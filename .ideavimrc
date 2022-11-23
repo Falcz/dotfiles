@@ -13,6 +13,10 @@ set easymotion
 set multiple-cursors
 set visualbell
 set clipboard=unnamedplus,unnamed
+set tabstop=4
+set shiftwidth=4
+set expandtab
+set wildmode=full:lastused
 
 imap jj <Esc>
 nnoremap <Leader>/ :nohlsearch<cr>
@@ -29,3 +33,5 @@ map <C-o> <Action>(Back)
 map <C-i> <Action>(Forward)
 map g; <Action>(JumpToLastChange)
 map g, <Action>(JumpToNextChange)
+nnoremap <leader>O O<Esc>
+nnoremap <leader>o o<Esc>
