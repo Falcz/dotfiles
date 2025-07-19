@@ -37,3 +37,14 @@ nnoremap <leader>O O<Esc>
 nnoremap <leader>o o<Esc>
 
 :tnoremap <Esc> <C-\><C-n>
+xnoremap <expr> p 'pgv"' . v:register . 'y'
+
+if has("win32")
+ let &shell='bash.exe'
+ let &shellcmdflag = '-c'
+ let &shellredir = '>%s 2>&1'
+ set shellquote= shellxescape=
+ let $TMP="/tmp"
+ set shellxquote=
+ let &shellpipe='2>&1| tee'
+endif
